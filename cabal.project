@@ -1,0 +1,6 @@
+packages: hstg.cabal, llvm-hs/*/*.cabal
+with-compiler: ghc-9.2.1
+
+allow-newer:
+  llvm-hs-pure:bytestring
+    

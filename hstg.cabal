@@ -1,0 +1,42 @@
+cabal-version:      2.4
+name:               hstg
+version:            1.0.0.0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+
+-- The license under which the package is released.
+-- license:
+author:             Matt Walker
+maintainer:         matt.g.d.walker@gmail.com
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files: CHANGELOG.md
+
+executable hstg
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    base ^>=4.16.0.0
+                    , text
+                    , mtl
+                    , random
+                    , data-fix
+                    , containers
+                    , llvm-hs ^>=12.0
+                    , llvm-hs-pure ^>=12.0
+                    -- , llvm-hs-pretty
+    hs-source-dirs:   app
+    default-language: Haskell2010
